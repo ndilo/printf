@@ -23,7 +23,7 @@ int handle_write_char(char b, char buffer[],
 	if (flags & F_ZERO)
 		padd = '0';
 
-	buffer[k++] = c;
+	buffer[k++] = b;
 	buffer[k] = '\0';
 
 	if (width > 1)
@@ -120,7 +120,7 @@ int write_num(int ind, char buffer[],
 		{
 			if (extra_a)
 				buffer[--ind] = extra_a;
-			return (write(1, &buffer[1], i - 1) + write(1, &buffer[ind], length));
+			return (write(1, &buffer[1], k - 1) + write(1, &buffer[ind], length));
 		}
 		else if (!(flags & F_MINUS) && padd == '0')/* extra char to left of padd */
 		{
@@ -176,7 +176,7 @@ int write_unsgnd(int is_negative, int ind,
 	if (width > length)
 	{
 		for (k = 0; k < width - length; k++)
-			buffer[i] = padd;
+			buffer[k] = padd;
 
 		buffer[k] = '\0';
 
