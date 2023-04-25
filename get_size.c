@@ -24,4 +24,3 @@ int get_size(const char *format, int *b)
 
 	return (size);
 }
-

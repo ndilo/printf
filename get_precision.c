@@ -39,5 +39,3 @@ int get_precision(const char *format, int *j, va_list list)
 
 	return (precision);
 }
-
-

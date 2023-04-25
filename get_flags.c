@@ -32,5 +32,3 @@ int get_flags(const char *format, int *k)
 
 	return (flags);
 }
-
-
