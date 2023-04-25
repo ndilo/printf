@@ -92,21 +92,21 @@ int prints_rot13string(va_list types, char buffer[],
 
 /* width handler */
 int handle_print(const char *fmt, int *ind, va_list list, char buffer[],
-        int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int handle_write_char(char b, char buffer[],
-        int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int handle_write_char(char b, char buffer[],
-        int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int write_number(int is_negative, int ind, char buffer[],
-        int flags, int width, int precision, int size);
+		int flags, int width, int precision, int size);
 int write_num(int ind, char buffer[],
-        int flags, int width, int prec,
-        int length, char padd, char extra_a);
+		int flags, int width, int prec,
+		int length, char padd, char extra_a);
 int write_unsgnd(int is_negative, int ind,
-        char buffer[],
-        int flags, int width, int precision, int size);
+		char buffer[],
+		int flags, int width, int precision, int size);
 int write_pointer(char buffer[], int ind, int length,
-        int width, int flags, char padd, char extra_a, int padd_start);
+		int width, int flags, char padd, char extra_a, int padd_start);
 
 /****************** UTILS ******************/
 int printable(char);
